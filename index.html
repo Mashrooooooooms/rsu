@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АО «Вяземское РСУ» — ремонтно-строительное управление</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('pic.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            line-height: 1.5;
+            display: flex;
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+        .card {
+            max-width: 700px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(5px);
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            overflow: hidden;
+            width: 100%;
+        }
+        .header {
+            background: #1e3a5f;
+            color: white;
+            padding: 2rem 2rem 1.5rem;
+        }
+        .header h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        .header .sub {
+            font-size: 1rem;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+        .content {
+            padding: 2rem;
+        }
+        .section {
+            margin-bottom: 1.8rem;
+        }
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        .section h2 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #1e3a5f;
+            margin-bottom: 0.8rem;
+            border-bottom: 2px solid #e9edf2;
+            padding-bottom: 0.4rem;
+        }
+        .info-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem 2rem;
+            margin-bottom: 0.6rem;
+        }
+        .info-label {
+            font-weight: 500;
+            color: #5f6b7a;
+            min-width: 100px;
+        }
+        .info-value {
+            font-weight: 400;
+            word-break: break-word;
+        }
+        .contact-highlight {
+            background: #f8fafd;
+            border-radius: 10px;
+            padding: 1.2rem;
+            margin-top: 0.8rem;
+        }
+        .contact-highlight .info-row {
+            margin-bottom: 0.5rem;
+        }
+        .contact-highlight .info-label {
+            min-width: 80px;
+        }
+        a {
+            color: #1e3a5f;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer-note {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #8a94a6;
+        }
+
+        /* --- Стили для новостного раздела --- */
+        .news-item {
+            /* контейнер новости */
+        }
+        .news-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1e3a5f;
+            margin-bottom: 0.3rem;
+        }
+        .news-date {
+            font-size: 0.9rem;
+            color: #8a94a6;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .news-body {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            white-space: pre-line;
+        }
+
+        /* ВЫДЕЛЕНИЕ секции новостей (Вариант 1 — плашка) */
+        .section.news-section {
+            background: #f8fafd;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        /* Чтобы заголовок внутри плашки не дублировал отступ */
+        .section.news-section h2 {
+            margin-top: 0;
+        }
+
+        @media (max-width: 500px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            .info-row {
+                flex-direction: column;
+                gap: 0.2rem;
+            }
+            .info-label {
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <h1>АО «Вяземское РСУ»</h1>
+            <div class="sub">Вяземское ремонтно-строительное управление</div>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2>📞 Контакты</h2>
+                <div class="contact-highlight">
+                    <div class="info-row">
+                        <span class="info-label">Телефон:</span>
+                        <span class="info-value"><a href="tel:+74813161603">+7 (48131) 6-16-03</a></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Факс:</span>
+                        <span class="info-value">+7 (48131) 6-13-66</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Email:</span>
+                        <span class="info-value"><a href="mailto:oaorsu@mail.ru">oaorsu@mail.ru</a></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Адрес:</span>
+                        <span class="info-value">215110, Смоленская обл., г. Вязьма, ул. Смоленская, 9</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📋 Реквизиты</h2>
+                <div class="info-row">
+                    <span class="info-label">Полное наименование:</span>
+                    <span class="info-value">Акционерное общество "Вяземское ремонтно-строительное управление"</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">ОГРН:</span>
+                    <span class="info-value">1026700855290</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">ИНН / КПП:</span>
+                    <span class="info-value">6722006891 / 672201001</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Юр. адрес:</span>
+                    <span class="info-value">215116, Смоленская обл., Вяземский р-н, г. Вязьма, ул. Смоленская, 9</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Орг.-правовая форма:</span>
+                    <span class="info-value">Непубличное акционерное общество</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🛠️ О компании</h2>
+                <p>АО «Вяземское РСУ» выполняет строительные и ремонтные работы на территории Вязьмы и Смоленской области. Имеем многолетний опыт, необходимое оборудование и квалифицированных специалистов.</p>
+            </div>
+
+            <!-- Новостной раздел с выделением -->
+            <div class="section news-section">
+                <h2>📰 Новости</h2>
+                <div class="news-item">
+                    <h3 class="news-title">Сообщение о проведении годового заседания общего собрания акционеров АО «Вяземское РСУ»</h3>
+                    <span class="news-date">13 мая 2025 г.</span>
+                    <div class="news-body">АКЦИОНЕРНОЕ ОБЩЕСТВО «ВЯЗЕМСКОЕ РЕМОНТНО-СТРОИТЕЛЬНОЕ УПРАВЛЕНИЕ» (далее — АО «Вяземское РСУ» или Общество), сообщает акционерам Общества о проведении годового заседания общего собрания акционеров. Полное фирменное наименование Общества: Акционерное общество "Вяземское ремонтно-строительное управление"
+Место нахождения: Российская Федерация, Смоленская область, город Вязьма.
+Способ принятия решения общим собранием акционеров: заседание.
+Вид заседания общего собрания акционеров: годовое
+
+Дата проведения заседания: 13 мая 2025 года.
+Время проведения заседания: 11 часов 00 минут по московскому времени.
+Место проведения заседания (адрес по которому будет проводиться заседания общего собрания акционеров): г. Вязьма, ул. Смоленская, д. 9, кабинет Генерального директора.
+
+Дата, на которую определяются (фиксируются) лица, имеющие право голоса при принятии решений общим собранием акционеров "19" апреля 2026 года.
+
+Категории (Типы) акций, владельцы которых имеют право голоса по всем вопросам повестки дня: обыкновенные.
+Время и место начала регистрации лиц имеющих право голоса при принятии решения общим собранием акционеров "13" мая 2025 года с 10 часов 45 минут по московскому времени по адресу проведения заседания.
+
+Для регистрации лиц, имеющим право голоса при принятии решений общим собранием акционеров (их представителями), необходимо предъявить документ, удостоверяющий личность, а так же в случаях, предусмотренных законодательством РФ, передать лицу, исполняющему функции счетной комиссии, документы, подтверждающие полномочия для осуществления голосования (их копии, засвидетельствованные (удостоверены) в порядке, предусмотренным законодательством РФ).
+
+Способы подписания бюллетеней для голосования:
+Бюллетень для голосования подписывается лицом, имеющим право голоса при принятии решений общим собранием акционеров, или его представителем собственноручной подписью.
+
+Повестка дня:
+1. Утверждение годового отчета Общества за 2025 год.
+2. Утверждение годовой бухгалтерской (финансовой) отчетности Общества за 2025 год.
+3. Распределение прибыли (в том числе выплата (объявление) дивидендов) и убытков Общества по результатам 2025 отчетного года.
+4. Избрание членов Ревизионной комиссии Общества.
+
+Лица, имеющие право голоса, могут ознакомиться с материалами по адресу: 215116, Смоленская область, Вяземский р-н, г. Вязьма, ул. Смоленская, д. 9, кабинет Генерального директора в течение 20 дней до даты проведения заседания, в рабочие дни с 8:00 до 17:00, а также во время регистрации и проведения заседания общего собрания акционеров по месту его проведения.
+
+Акционеры, зарегистрированные в реестре акционеров общества, обязаны своевременно предоставлять информацию об изменении своих данных, в том числе сведений об адресе, банковских реквизитах, регистратору общества.
+
+В случае если акционером зарегистрированным в реестре акционеров, своевременно не предоставлена информация об актуальных данных, в частности сведения о почтовом адресе, банковских реквизитах, предупреждаем о возможности приостановления направления сообщений или бюллетеней для голосования по почтовому адресу, а так же о возможности приостановления выплаты дивидендов будет принято собранием акционеров.
+
+Акционеры вправе предоставить регистратору АО «Реестр» (www.aoreestr.ru) актуальные сведения о почтовом адресе, банковских реквизитах и иные актуализированные сведения в порядке предусмотренным правилами ведения реестров владельцев ценных бумаг АО "Реестр" (https://www.aoreestr.ru/emitent/rules-docs/), в том числе посредством ЛКК "Реестр-Онлайн"</div>
+                </div>
+            </div>
+
+            <div class="footer-note">
+                © АО «Вяземское РСУ», 1943 - 2026
+            </div>
+        </div>
+    </div>
+</body>
+</html>
